@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./assets/logo.svg";
+import "./App.scss";
+import NavClass from "./components/NavClass";
+import Home from "./views/Home";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    var myName = "Mohamed Ahmed";
+    return (
+        <div className="App" style={{backgroundColor: "#EEE"}}>
+            
+            <NavClass/>
+            <Home />
+            <div>{myName}</div>
+            <div>{Math.random()}</div>
+            <img src={logo} alt="" width="100" />
+        </div>
+    );
 }
 
 export default App;
