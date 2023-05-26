@@ -1,18 +1,20 @@
-import logo from "./assets/logo.svg";
 import "./App.scss";
-import NavClass from "./components/NavClass";
-import Home from "./views/Home";
-
+import Counter from "./components/Counter";
+import CounterTwo from "./components/Counter2";
+import UpdateAll from "./views/UpdateAll";
+// import ConditionalRender from "./views/ConditionalRender";
+import ViewData from "./views/ViewData";
 function App() {
-    var myName = "Mohamed Ahmed";
+    var courseName = "React course from Kimit";
     return (
-        <div className="App" style={{backgroundColor: "#EEE"}}>
-            
-            <NavClass/>
-            <Home />
-            <div>{myName}</div>
-            <div>{Math.random()}</div>
-            <img src={logo} alt="" width="100" />
+        <div className="App">
+            <h1>{courseName}</h1>
+            {/* <ConditionalRender /> */}
+            {/* <ViewData /> */}
+            {/* <UpdateAll /> */}
+            {/* <Counter /> */}
+            <CounterTwo />
+            <CounterTwo />
         </div>
     );
 }

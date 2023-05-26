@@ -1,15 +1,7 @@
-@import "./sass/components/nav";
-
-body {
-    margin: 0;
-    height: 2000px;
-}
-
 * {
-    box-sizing: border-box;
+    text-align: center;
 }
 
-/*
-rfc || sfc  => Function component
-rcc => class component
-*/
+h1 {
+    color: red;
+}
